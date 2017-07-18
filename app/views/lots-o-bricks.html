@@ -5,15 +5,18 @@
     <p>Size: Red {{size}}</p>
     <p>Quantity: <span class="quantity">{{brick.quantity}}</span></p>
     <p>Price: {{brick.price}}</p>
+    <button type="button" class="btn btn-primary" ng-click="brick.quantity = brick.quantity - 1">Add to Cart</button>
   </div>
   <div id="LoB-{{size}}" class="col-sm-4 well" ng-repeat="(size, brick) in lotsStore.blueBricks">
     <p>Size: Blue {{size}}</p>
     <p>Quantity: {{brick.quantity}}</p>
     <p>Price: {{brick.price}}</p>
+    <button type="button" class="btn btn-primary" ng-click="brick.quantity = brick.quantity - 1">Add to Cart</button>
   </div>
   <div id="LoB-{{size}}" class="col-sm-4 well" ng-repeat="(size, brick) in lotsStore.greenBricks">
     <p>Size: Green {{size}}</p>
     <p>Quantity: {{brick.quantity}}</p>
     <p>Price: {{brick.price}}</p>
+    <button type="button" class="btn btn-primary" ng-click="brick.quantity = brick.quantity - 1">Add to Cart</button>
   </div>
 </div>
