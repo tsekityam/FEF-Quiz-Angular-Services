@@ -19,7 +19,7 @@
     {
       "description": "Each Bricks-A-Bunch brick has a Buy button",
       "definition": {
-        "nodes": ".bricksList li button",
+        "nodes": ".bricksList button",
         "get": "count",
         "equals": 3
       }
